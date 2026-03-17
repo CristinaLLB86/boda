@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuestra Boda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuente elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      color: #333;
+      text-align: center;
+      background-color: #f8f8f8;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h1, h2 {
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    /* PORTADA */
+    .hero {
+      padding: 80px 20px;
+      background-image: url('foto.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+    }
+
+    /* capa oscura elegante */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+    }
+
+    .hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.2em;
+      letter-spacing: 3px;
+    }
+
+    /* TARJETAS */
+    .card {
+      background: white;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    /* BOTÓN */
+    button {
+      padding: 12px 25px;
+      border: none;
+      background: #d4af37;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input {
+      padding: 10px;
+      width: 80%;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- PORTADA -->
+  <section class="hero">
+    <h1>Juan & Cristina</h1>
+  </section>
+
+  <!-- MENSAJE -->
+  <section>
+    <div class="card">
+      <h2>¡Nos casamos!</h2>
+      <p>
+        <!-- ESCRIBE AQUÍ TU TEXTO -->
+        Estamos muy felices de compartir este momento contigo...
+      </p>
+    </div>
+  </section>
+
+  <!-- EVENTO -->
+  <section>
+    <div class="card">
+      <h2>Detalles del Evento</h2>
+
+    <!-- CEREMONIA -->
+    <h3>💒 Ceremonia</h3>
+    <p>📅 Fecha: 19.09.2026</p>
+    <p>⏰ Hora: 12:00</p>
+    <p>📍 Lugar: Castillo de Bellver</p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=Palma+de+Mallorca&output=embed"
+      width="100%" 
+      height="200" 
+      style="border:0; margin-bottom:20px;">
+    </iframe>
+
+    <!-- BANQUETE -->
+    <h3>🍽️ Banquete</h3>
+    <p>⏰ Hora: 13:30</p>
+    <p>📍 Lugar: Es Molí d'es Comte </p>
+
+    <iframe 
+      src="https://www.google.com/maps?q=Palma+de+Mallorca&output=embed"
+      width="100%" 
+      height="200" 
+      style="border:0;">
+    </iframe>
+
+  </div>
+</section>
+
+  <!-- RSVP -->
+  <section>
+    <div class="card">
+      <h2>Confirmación de asistencia</h2>
+      <p>Por favor, confirma tu asistencia antes del 15/08/2026</p>
+
+      <p>📞 Cristina: 647 24 15 99</p>
+      <p>📞 Juan: 618 49 86 44</p>
+
+      <p style="margin-top:20px;">
+        También puedes confirmarnos por WhatsApp 💬
+      </p>
+    </div>
+  </section>
+
+  <!-- REGALOS -->
+  <section>
+    <div class="card">
+      <h2>Regalos</h2>
+      <p>Si deseas hacernos un regalo:</p>
+      <p><strong>IBAN:</strong> ES00 0000 0000 0000</p>
+      <p><strong>Bizum:</strong> 600 000 000</p>
+    </div>
+  </section>
+
+</body>
+</html>
