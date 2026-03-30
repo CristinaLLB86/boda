@@ -1,89 +1,87 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Nuestra Boda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
   <!-- Fuente elegante -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
 
   <style>
+
     body {
       margin: 0;
-      font-family: 'Playfair Display', serif;
-      color: #333;
+      font-family: 'Cormorant Garamond', serif;
+      color: #2f3e2f;
       text-align: center;
 
-      background-image: url('foto_fondo.jpg');
-      background-size: cover;
-      background-position: center 20%;
-      background-attachment: fixed;
+      background-image: url('fondoo.jpg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #f5f5f5;
     }
 
     body::before {
+
       content: "";
       position: fixed;
-      inset: 0;
-      background: rgba(255,255,255,0.6);
-      backdrop-filter: blur(6px);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.85);
       z-index: -1;
+    } 
+
+    .contenedor {
+      max-width: 500px;
+      margin: auto;
+      padding: 30px 20px;
     }
 
-    section {
-      padding: 20px 20px;
+    h1 {
+      font-size: 3.5em;
+      color: #5a6b5a;
+      letter-spacing: 5px;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
 
-    h1, h2 {
+    h2 {
+      font-size: 2.3em;
       margin-bottom: 20px;
-      font-weight: 300;
     }
 
-    /* PORTADA */
-    .hero {
-      height: 30vh;
-      min-height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      position: relative;
+    h3 {
+      font-size: 1.6em;
+      margin-top: 25px;
+      margin-bottom: 10px;
     }
 
-    /* capa oscura elegante */
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.25);
+    p {
+      font-size: 1.45em;
+      line-height: 1.8;
+      margin: 10px 0;
     }
 
-    .hero h1 {
-      position: relative;
-      z-index: 1;
-      color: #f5f0e6;
-      font-weight: 500;
-      letter-spacing: 6px;
-      font-size: 3em;
-      text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    .seccion {
+      margin-bottom: 40px;
     }
 
-    /* TARJETAS */
-    .card {
-      background-image: url('fondo_verde.png');
-      background-size: cover;
-      background-position: center;
-      background-color: rgba(255, 255, 255, 0.6);
-      background-blend-mode: lighten;
-      backdrop-filter: blur(4px);
-      max-width: 600px;
-      margin: 8px auto;
-      padding: 25px;
-      border-radius: 15px;
-      color: #2f3e2f;
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: 0;
+      margin: 20px 0;
+      border-radius: 10px;
     }
 
-    /* BOTÓN */
     button {
       padding: 12px 25px;
       border: none;
@@ -92,103 +90,98 @@
       border-radius: 8px;
       cursor: pointer;
       font-size: 16px;
+      margin-bottom: 20px;
     }
 
-    input {
-      padding: 10px;
-      width: 80%;
-      margin: 10px 0;
-      border-radius: 8px;
-      border: 1px solid #ccc;
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 1em;
+      color: #5a6b5a;
+      text-align: center;
+      font-style: italic;
+      opacity: 0.8;
     }
 
   </style>
+
 </head>
 
 <body>
 
-  <!-- PORTADA -->
-  <section class="hero">
-    <h1>Cristina & Juan</h1>
-  </section>
+  <div class="contenedor">
 
-  <!-- MENSAJE -->
-  <section>
-    <div class="card">
-      <h2>¡Hola!</h2>
-      <p>
-        <!-- ESCRIBE AQUÍ TU TEXTO -->
-        Soy Óliver, y vengo a contaros que, por fin, mis papás se casan.
-      </p>
-      <p> Me haría muchísima ilusión que vinierais a celebrarlo con nosotros 💛</p>
-    </div>
-  </section>
+```
+<h1>Cristina & Juan</h1>
 
-  <!-- EVENTO -->
-  <section>
-    <div class="card">
-      <h2>Detalles del Evento</h2>
+<div class="seccion">
+  <h2>¡Hola!</h2>
 
-    <!-- CEREMONIA -->
-    <h3>💒 Ceremonia</h3>
-    <p>📅 Fecha: 19.09.2026</p>
-    <p>⏰ Hora: 12:00</p>
-    <p>📍 Lugar: Castillo de Bellver</p>
+  <p>
+    Soy Óliver, y vengo a contaros que, por fin, mis papás se casan.
+  </p>
 
-    <iframe 
-      src="https://www.google.com/maps?q=Castillo+de+Bellver+Palma&output=embed"
-      width="100%" 
-      height="200" 
-      style="border:0; margin-bottom:20px;">
-    </iframe>
+  <p>
+    Me haría muchísima ilusión que vinierais a celebrarlo con nosotros 💛
+  </p>
+</div>
 
-    <a href="https://www.google.com/maps/dir/?api=1&destination=Castillo+de+Bellver+Palma" target="_blank">
-      <button>Cómo llegar a la ceremonia</button>
-    </a>
+<div class="seccion">
+  <h2>Detalles del Evento</h2>
 
-    <!-- BANQUETE -->
-    <h3>🍽️ Banquete</h3>
-    <p>⏰ Hora: 13:30</p>
-    <p>📍 Lugar: Es Molí d'es Comte </p>
+  <h3>💒 Ceremonia</h3>
 
-    <iframe 
-      src="https://www.google.com/maps?q=Es+Molí+d%27es+Comte+Mallorca&output=embed"
-      width="100%" 
-      height="200" 
-      style="border:0; margin-bottom:20px;">
-    </iframe>
+  <p>📅 Fecha: 19.09.2026</p>
+  <p>⏰ Hora: 12:00</p>
+  <p>📍 Lugar: Castillo de Bellver</p>
 
-    <a href="https://www.google.com/maps/dir/?api=1&destination=Es+Molí+d%27es+Comte+Mallorca" target="_blank">
-      <button>Cómo llegar al banquete</button>
-    </a>
+  <iframe src="https://www.google.com/maps?q=Castillo+de+Bellver+Palma&output=embed"></iframe>
+
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Castillo+de+Bellver+Palma" target="_blank">
+    <button>Cómo llegar a la ceremonia</button>
+  </a>
+
+  <h3>🍽️ Banquete</h3>
+
+  <p>⏰ Hora: 13:30</p>
+  <p>📍 Lugar: Es Molí d'es Comte</p>
+
+  <iframe src="https://www.google.com/maps?q=Es+Molí+d%27es+Comte+Mallorca&output=embed"></iframe>
+
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Es+Molí+d%27es+Comte+Mallorca" target="_blank">
+    <button>Cómo llegar al banquete</button>
+  </a>
+</div>
+
+<div class="seccion">
+  <h2>Confirmación de asistencia</h2>
+
+  <p>Por favor, confirma tu asistencia lo antes posible</p>
+
+  <p>📞 Cristina: 647 24 15 99</p>
+  <p>📞 Juan: 618 49 86 44</p>
+
+  <p>También puedes confirmarnos por WhatsApp 💬</p>
+</div>
+
+<div class="seccion">
+  <h2>🎁 Regalos</h2>
+
+  <p>¡El regalo es opcional...</p>
+  <p>                         ...la asistencia obligatoria!</p>
+  <p>Pero si queréis tener un detalle con nosotros que mejor que ayudarnos a pagar la luna de miel.</p>
+
+  <p><strong>IBAN:</strong> ES31 0049 6081 4720 1659 7686</p>
+  <p><strong>Bizum:</strong> 647 24 15 99</p>
+</div>
+
+<footer>
+  Invitación web de creación propia hecha por nosotros ❤️ (Cris & Juan)©
+</footer>
+```
 
   </div>
-</section>
-
-  <!-- RSVP -->
-  <section>
-    <div class="card">
-      <h2>Confirmación de asistencia</h2>
-      <p>Por favor, confirma tu asistencia antes del 15/08/2026</p>
-
-      <p>📞 Cristina: 647 24 15 99</p>
-      <p>📞 Juan: 618 49 86 44</p>
-
-      <p style="margin-top:20px;">
-        También puedes confirmarnos por WhatsApp 💬
-      </p>
-    </div>
-  </section>
-
-  <!-- REGALOS -->
-  <section>
-    <div class="card">
-      <h2>Regalos</h2>
-      <p>Si deseas hacernos un regalo:</p>
-      <p><strong>IBAN:</strong> ES00 0000 0000 0000</p>
-      <p><strong>Bizum:</strong> 600 000 000</p>
-    </div>
-  </section>
 
 </body>
+
 </html>
